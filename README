@@ -1,0 +1,31 @@
+------------------------------------------------------------------------------
+Fri Feb 26 10:32:15 CET 2016
+Alexander Kluber
+
+Harmonic oscillator
+
+The Fokker-Planck (Smoluchowski) equation for a 1D harmonic oscillator (V =
+0.5*b*x**2) can be solved exactly. The timescales 
+
+t_i = kT/((i - 1)*b*D)
+
+Then I added a quickly varying potential that should slow the dynamics.
+Theoretically, this should decrease the diffusion coefficient by
+
+D = D_0*exp(-(dE/kT)**2)
+
+where D_0 is some baseline diffusion coefficient, dE is the standard deviation
+of the rough potential, and kT is the thermal energy scale. 
+
+Interestingly, the ratio of each rough timescale t_i to corresponding smooth
+timescale t_i_smooth only depends on dE/kT,
+
+t_i/t_i_smooth = exp((dE/kT)**2)
+
+(1) Zwanzig, R. Diffusion in a Rough Potential. Proc. Natl. Acad. Sci. 1988,
+85, 2029–2030.
+------------------------------------------------------------------------------
+
+Double well potential
+
+
